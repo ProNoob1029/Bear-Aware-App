@@ -29,7 +29,7 @@ fun MainScreen(
                         mode = MjpegView.MODE_FIT_WIDTH
                         isAdjustHeight = true
                         supportPinchZoomAndPan = true
-                        setUrl("http://9dmc.go.ro:8080/my_camera")
+                        setUrl("http://10.42.0.1:8080/my_camera")
                         startStream()
                     }
                 },

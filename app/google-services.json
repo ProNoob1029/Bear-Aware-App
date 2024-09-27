@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "546318437210",
+    "project_id": "bear-aware-notifications",
+    "storage_bucket": "bear-aware-notifications.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546318437210:android:3693a833931697c0c78163",
+        "android_client_info": {
+          "package_name": "com.dpit.bearaware"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA64tmKRs3damwtw3JQQClW6WFn-719RXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,6 +12,9 @@ ktor = "2.3.12"
 coroutines = "1.7.3"
 media3 = "1.4.1"
 mjpeg-view-ver = "1.1.2"
+google-sv = "4.4.2"
+firebase-bom-ver = "33.3.0"
+firebaseMessagingKtx = "24.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -38,8 +41,11 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-c
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
 
 mjpeg-view = { group = "com.perthcpe23.dev", name = "android-mjpeg-view",  version.ref = "mjpeg-view-ver"}
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase-bom-ver" }
+firebase-messaging-ktx = { group = "com.google.firebase", name = "firebase-messaging-ktx", version.ref = "firebaseMessagingKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-services = { id = "com.google.gms.google-services", version.ref = "google-sv"}
 
