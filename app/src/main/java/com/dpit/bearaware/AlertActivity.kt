@@ -11,13 +11,19 @@ import android.view.WindowManager
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import com.dpit.bearaware.ui.theme.BearAwareTheme
 
 class AlertActivity : ComponentActivity() {
@@ -32,13 +38,24 @@ class AlertActivity : ComponentActivity() {
                 darkTheme = false
             ) {
                 Scaffold { scaffoldPadding ->
-                    Box(
+                    Column (
                         modifier = Modifier
                             .padding(scaffoldPadding)
                             .fillMaxSize(),
-                        contentAlignment = Alignment.Center
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.Center
                     ) {
-                        Text("HI LOCK SCREEN")
+                        Text(
+                            text = "BEAR DETECTED",
+                            style = MaterialTheme.typography.headlineLarge.copy(
+                                fontWeight = FontWeight.Black
+                            )
+                        )
+                        Image(
+                            modifier = Modifier.fillMaxWidth(),
+                            painter = painterResource(R.drawable.bear_icon),
+                            contentDescription = "bear"
+                        )
                     }
                 }
             }
